@@ -1,2 +1,0 @@
-alert("rg")
-import './getMembers'
