@@ -1,3 +1,5 @@
+@import './vars.scss';
+
 .btn {
 	line-height: 50px;
 	height: 50px;
@@ -5,7 +7,7 @@
 	width: 250px;
 	cursor: pointer;
 
-	color: #FFF;
+	color: $backgroundColor;
 	transition: all 0.3s;
 	position: relative;
 	span {
