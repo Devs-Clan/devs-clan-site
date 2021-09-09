@@ -85,6 +85,12 @@ a:hover, a:visited, a:link, a:active {
   text-decoration: none;
 }
 
+.member_icon {
+  margin: 10px;
+  height: 20px;
+  width: 20px;
+}
+
 .btn {
   margin: 15px;
   line-height: 50px;
