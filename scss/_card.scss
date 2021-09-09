@@ -1,0 +1,13 @@
+@import './vars';
+
+.card {
+    background-color: $transparent-white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 4px $black;
+
+    a{
+      transform: scale(1, 1.1);
+    }
+}  

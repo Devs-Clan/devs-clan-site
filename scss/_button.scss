@@ -26,7 +26,7 @@
 		border-bottom-width: 1px;
 		border-top-style: solid;
 		border-bottom-style: solid;
-		border-top-color: $black; //rgba(255,255,255,0.5)
+		border-top-color: $black;
 		border-bottom-color: $black;
 		transform: scale(0.1, 1);
 	}
@@ -52,6 +52,8 @@
 		height: 100%;
 		z-index: 1;
 		transition: all 0.3s;
-		background-color: rgba(255, 255, 255, 0.1);
+		background-color: $transparent-white;
 	}
 }
+
+//Example to use in html 👉🏼 <div class="btn"><span>HOVER ME</span></div> 

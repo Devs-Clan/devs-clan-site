@@ -1,0 +1,12 @@
+@import './vars';
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: $backgroundColor;
+
+    h1 {
+        font-size: 50px;
+    }
+ }
