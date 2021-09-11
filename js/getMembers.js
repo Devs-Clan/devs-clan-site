@@ -1,19 +1,10 @@
 
-  // Get HTML head element
-  var head = document.getElementsByTagName('HEAD')[0]; 
-  
-  // Create new link Element
-  var link = document.createElement('link');
-
-  // set the attributes for link element 
-  link.rel = 'stylesheet'; 
-
-  link.type = 'text/css';
-
-  link.href = '../css/main.css'; 
-
-  // Append link element to HTML head
-  head.appendChild(link); 
+var head = document.getElementsByTagName('HEAD')[0]; 
+var link = document.createElement('link');
+link.rel = 'stylesheet'; 
+link.type = 'text/css';
+link.href = '../css/main.css'; 
+head.appendChild(link); 
 
 fetch("https://api.github.com/orgs/Devs-Clan/public_members")
 .then((result)=> result.json())
