@@ -12,6 +12,6 @@ function checkSize(){
     }else{
         document.getElementById("row").style.display = "table";
         document.getElementById("leftcolumn").setAttribute("style","width:75%");
-        document.getElementById("rightcolumn").setAttribute("style","width:25%");
+        document.getElementById("rightcolumn").setAttribute("style","width:23%");
     }
 }
