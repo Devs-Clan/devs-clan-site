@@ -50,7 +50,6 @@ html, body {
 
 .row {
   content: "";
-  display: table;
   clear: both;
 }
 
@@ -70,6 +69,7 @@ html, body {
   padding: 20px;
   text-align: center;
   background: #DAA520;
+  width: 100%;
   margin-top: 20px;
   border-radius: 10px;
 }
