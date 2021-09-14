@@ -11,7 +11,7 @@ function checkSize(){
         document.getElementById("rightcolumn").setAttribute("style","width:100%");
     }else{
         document.getElementById("row").style.display = "table";
-        document.getElementById("projects").setAttribute("style","width:75%");
-        document.getElementById("rightcolumn").setAttribute("style","width:23%");
+        document.getElementById("projects").setAttribute("style","width:73%");
+        document.getElementById("rightcolumn").setAttribute("style","width:25%");
     }
 }
