@@ -12,4 +12,4 @@
 <a href="https://devs-clan.github.io/devs-clan-site/" target="_blank">Devs-Clan-Site</a>
 
 ## Contact us
-<a  href="mailto:yechielb2000@gmail.com?"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
+<a target="_blank" href="mailto:yechielb2000@gmail.com?"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
