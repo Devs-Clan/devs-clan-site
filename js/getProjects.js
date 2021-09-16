@@ -11,13 +11,19 @@ fetch("https://api.github.com/orgs/Devs-Clan/repos")
         //     temp = data2[0].login;
         // }).catch(function(){console.log("ouch")})
         
+        var lan;
+        if(data[i].language){
+            lan = "Main language " + data[i].language;
+        }else{
+            lan = "No language";
+        }
 
         document.getElementById("projects").innerHTML += 
         `
             <div class="card" style="width:100%;">
                 <h2>${data[i].name}</h2>
                 <h5>Created at : ${data[i].created_at}</h5>
-                <h6>Main language ${data[i].language}</h6>
+                <h6>${lan}</h6>
                 <img src="./images/devs_clan_logo.jpg">
                 <p>${data[i].description}</p>   
                 <a href="${data[i].html_url}" target="_blank" style="width:100%;" class="btn"><span>SOURCE CODE</span></a>
