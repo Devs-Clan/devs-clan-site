@@ -1,4 +1,3 @@
-
 fetch("https://api.github.com/orgs/Devs-Clan/public_members")
 .then((result)=> result.json())
 .then((data) => {

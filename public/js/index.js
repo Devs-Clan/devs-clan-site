@@ -1,7 +1,14 @@
-loadScript('./public/js/getLinkCss.js');
-loadScript('./public/js/getMembers.js');
-loadScript('./public/js/getProjects.js');
-loadScript('./public/js/suitWindow.js');
+if((window.location.pathname).split("/").pop() == 'index.html'){ 
+loadScript('/js/getLinkCss.js');
+loadScript('/js/getMembers.js');
+loadScript('/js/getProjects.js');
+loadScript('/js/suitWindow.js');
+
+}
+
+if((window.location.pathname).split("/").pop() == 'requests.html'){ 
+loadScript('./js/getRequests.js')
+}
 
 function loadScript(url){    
     var head = document.getElementsByTagName('HEAD')[0];
