@@ -3,11 +3,10 @@ loadScript('/js/getLinkCss.js');
 loadScript('/js/getMembers.js');
 loadScript('/js/getProjects.js');
 loadScript('/js/suitWindow.js');
-
 }
 
 if((window.location.pathname).split("/").pop() == 'requests.html'){ 
-loadScript('./js/getRequests.js')
+loadScript('/js/requests.js')
 }
 
 function loadScript(url){    

@@ -4,11 +4,11 @@ const path = require('path');
 const router = express.Router();
 
 const PORT = process.env.port || 3000;
+
 app.use(express.static('./public'));
 
 router.get('/',function(req,res) {
-  res.sendFile(path.resolve('./public/index.html'));
-  console.log("index")
+  res.sendFile(path.resolve('./public/html/index.html'));
 });
 
 router.get('/:page',function(req,res){
