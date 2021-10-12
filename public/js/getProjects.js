@@ -1,5 +1,3 @@
-
-
 fetch("https://api.github.com/orgs/Devs-Clan/repos")
 .then((result)=> result.json())
 .then((data) => {
@@ -21,7 +19,7 @@ fetch("https://api.github.com/orgs/Devs-Clan/repos")
                         <h2>${data[i].name}</h2>
                         <h5>Created at : ${data[i].created_at}</h5>
                         <h6>${lan}</h6>
-                        <img src="./images/devs_clan_logo.jpg">
+                        <img src="../public/images/favicon.jpg">
                         <p>${description}</p>   
                         <a href="${data[i].html_url}" target="_blank" style="width:100%;" class="btn"><span>SOURCE CODE</span></a>
                     </div>
