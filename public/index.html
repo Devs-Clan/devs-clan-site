@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Devs Clan</title>
 
-    <link rel="icon" type="image/png" href="images/favicon.jpg"/>
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <script type="text/javascript" src="js/index.js"></script>
-
     <script defer src="/__/firebase/9.1.2/firebase-app-compat.js"></script>
     <script defer src="/__/firebase/9.1.2/firebase-auth-compat.js"></script>
     <script defer src="/__/firebase/9.1.2/firebase-database-compat.js"></script>
@@ -21,43 +17,18 @@
     <script defer src="/__/firebase/9.1.2/firebase-performance-compat.js"></script>
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
+    <link rel="icon" type="image/png" href="images/favicon.jpg"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/index.js"></script>
   </head>
-  <body>
-    <div class="navbar">
-      <a href="html/requests.html" style="width: min-content;"><div class="btn" style="float: left;"><span>GO REQUESTS</span></div></a>
-      <div class="btn" style="float: right;" onclick="signIn()"><span>sign in</span></div>
-      <div class="btn" style="float: right;" onclick="logIn()"><span>log in</span></div>
-      <br>
-  </div>
+  <body style="text-align: center; margin-top: 10%;" >
+   
+    <div class="card" style="width: 60%; height: 250px; margin-left: 20%;">
 
-    <div class="header">
-        <h1>WELCOME</h1>
-        <h2>Devs-Clan</h2>
+      <h1>Welcome to Devs-Clan!</h1>
+      <br><br>
+      <a href="html/homepage.html"><div class="btn" style="margin-left: 35%;"><span>Continue</span></div></a>
     </div>
-    <div class="row" id="row">
-        <div class="leftcolumn"  id="projects"></div>
 
-        <div class="rightcolumn" id="rightcolumn">
-          <div class="card">
-            <h2>About <br>Devs-Clan</h2>
-            <img style="width: 100px; height: 100px;" src="images/favicon.jpg">
-            <p>Devs-Clan is an organization for people who want to make ideas and need help, they can join our organization to implement their ideas</p>
-          </div>
-          <div class="card">
-            <h3>Hall of Fame</h3>
-            <div  id="fame-members">NA</div>
-            <!-- todo  -->
-          </div>
-          <div class="card">
-            <h3>Follow our members</h3>
-            <div id="members"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer">
-        <h2>Footer</h2>
-      </div>
-    
   </body>
 </html>

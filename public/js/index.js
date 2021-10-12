@@ -1,8 +1,9 @@
-if (window.location.pathname.split("/").pop() == "index.html") {
-  loadScript("./js/getLinkCss.js");
-  loadScript("./js/getMembers.js");
-  loadScript("./js/getProjects.js");
-  loadScript("./js/suitWindow.js");
+if (window.location.pathname.split("/").pop() == "homepage.html") {
+  console.log("hi")
+  loadScript("../js/getLinkCss.js");
+  loadScript("../js/getMembers.js");
+  loadScript("../js/getProjects.js");
+  loadScript("../js/suitWindow.js");
 }
 
 // if((window.location.pathname).split("/").pop() == 'requests.html'){
