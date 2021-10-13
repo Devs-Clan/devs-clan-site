@@ -1,5 +1,4 @@
 if (window.location.pathname.split("/").pop() == "homepage.html") {
-  console.log("hi")
   loadScript("../js/getLinkCss.js");
   loadScript("../js/getMembers.js");
   loadScript("../js/getProjects.js");

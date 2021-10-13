@@ -11,42 +11,43 @@
 </head>
 <body>
 
-    <div class="navbar">
-        <a href="requests.html" style="width: min-content;"><div class="btn" style="float: left;"><span>GO REQUESTS</span></div></a>
-        <div class="btn" style="float: right;" onclick="signIn()"><span>sign in</span></div>
-        <div class="btn" style="float: right;" onclick="logIn()"><span>log in</span></div>
-        <br>
-    </div>
-  
-      <div class="header">
-          <h1>WELCOME</h1>
-          <h2>Devs-Clan</h2>
+  <div>
+    <br>
+    <a href="requests.html"><div class="btn" style="float: left;"><span>REQUESTS</span></div></a>
+    <a href="https://github.com/Devs-Clan" target="_blank"><div class="btn" style="float: left;"><span>GITHUB</span></div></a>
+    <a href="requests.html"><div class="btn" style="float: left;"><span>SIGN IN</span></div></a>
+    <a href="requests.html"><div class="btn" style="float: left;"><span>LOG IN</span></div></a>
+    <br>
+  </div>
+ 
+  <div class="header">
+    <h1>WELCOME</h1>
+    <h2>Devs-Clan</h2>
+  </div>
+
+  <div class="row" id="row">
+    <div class="leftcolumn"  id="projects"></div>
+    <div class="rightcolumn" id="rightcolumn">
+      <div class="card">
+        <h2>About <br>Devs-Clan</h2>
+        <img style="width: 100px; height: 100px;" src="../images/favicon.jpg">
+        <p>Devs-Clan is an organization for people who want to make ideas and need help, they can join our organization to implement their ideas</p>
       </div>
-      <div class="row" id="row">
-          <div class="leftcolumn"  id="projects"></div>
-  
-          <div class="rightcolumn" id="rightcolumn">
-            <div class="card">
-              <h2>About <br>Devs-Clan</h2>
-              <img style="width: 100px; height: 100px;" src="../images/favicon.jpg">
-              <p>Devs-Clan is an organization for people who want to make ideas and need help, they can join our organization to implement their ideas</p>
-            </div>
-            <div class="card">
-              <h3>Hall of Fame</h3>
-              <div  id="fame-members">NA</div>
-              <!-- todo  -->
-            </div>
-            <div class="card">
-              <h3>Follow our members</h3>
-              <div id="members"></div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="footer">
-          <h2>Footer</h2>
-        </div>
-      
-    
+      <div class="card">
+        <h3>Hall of Fame</h3>
+        <div  id="fame-members">NA</div>
+        <!-- todo  -->
+      </div>
+      <div class="card">
+        <h3>Follow our members</h3>
+        <div id="members"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+  <h2>Footer</h2>
+  </div>
+     
 </body>
 </html>
