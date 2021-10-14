@@ -1,5 +1,30 @@
 .row {
-    content: "";
-    clear: both;
-    // display: table;
+    display: flex;
+    justify-content: center;
+}
+
+.leftcolumn {   
+  position: static;
+  width: 50%;
+}
+
+.rightcolumn {
+  position: static;
+  width: 20%;
+  margin-left: 100px;
+}
+
+@media(max-width: 800px){
+  .row{
+    display: grid;
   }
+  .rightcolumn{
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+  .leftcolumn{
+    display: flex;
+    width: 100%;
+  }
+}
