@@ -5,8 +5,9 @@ if (window.location.pathname.split("/").pop() == "homepage.html") {
   loadScript("../js/suitWindow.js");
 }
 
-// if((window.location.pathname).split("/").pop() == 'requests.html'){
-// }
+if((window.location.pathname).split("/").pop() == 'sign-in.html'){
+  loadScript("../js/sign-in.js");
+}
 
 function loadScript(url) {
   var script = document.createElement("script");
