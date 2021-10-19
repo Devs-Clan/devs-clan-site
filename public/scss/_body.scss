@@ -1,5 +1,4 @@
 @import './vars';
-
 html,body {
   background-color: $backgroundColor;
   padding: 10px;
@@ -10,8 +9,3 @@ html,body {
   -o-user-select: none;
   user-select: none;
 }
-
-// * {
-//   box-sizing: border-box;
-  
-// }

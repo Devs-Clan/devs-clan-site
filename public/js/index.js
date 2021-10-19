@@ -14,7 +14,7 @@ if((window.location.pathname).split("/").pop() == 'requests.html'){
 }
 
 function loadScript(url) {
-  var script = document.createElement("script");
+  var script = document.createElement("script")
   script.src = url;
   document.head.appendChild(script);
 }

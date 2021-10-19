@@ -10,26 +10,31 @@
 </head>
 <body class="unselectable">
 
-    <div class="menu" onclick="menu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
-
-    <div class="navbar">
+    <div id="sideMenu" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" id="closeMenu">&times;</a>
         <div onclick="goBack()" class="btn" style="float: left;"><span>GO BACK</span></div>
         <a href="homepage.html"><div class="btn" style="float: left;"><span>HOME</span></div></a>
         <a href="sign-in.html"><div class="btn" style="float: left;"><span>SIGN IN</span></div></a>
     </div>
-    <br>
+    <span class="openMenuBtn" id="openMenu">&#9776;</span>
+    
 
     <div class="header">
         <h1>REQUESTS</h1>
     </div>
 
     <div class="requests-section">
-        <ol>
+        
+        <ol style="list-style-type: none;">
+            <li>
+                <div class="card" style="text-align: left; width: 70%;">
+                    <h2>This is a request</h2>
+                    <p style="margin-left: 20px; font-size: 20px; width: 50%;" > text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+                    <i class="far fa-thumbs-up"></i>
+                </div>
+            </li>
         </ol>
+        
     </div>
     
 </body>

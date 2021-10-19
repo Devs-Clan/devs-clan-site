@@ -72,7 +72,16 @@ html, body {
     display: grid;
   }
   .rightcolumn {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     margin-left: 0;
   }
@@ -80,6 +89,16 @@ html, body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
 }
@@ -200,36 +219,46 @@ a:hover, a:visited, a:link, a:active {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.menu {
-  display: none;
-  cursor: pointer;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  padding-top: 60px;
 }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+.sidenava {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+.sidenava:hover {
+  color: #f1f1f1;
 }
 
-.change .bar2 {
-  opacity: 0;
+.sidenav.closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-@media (max-width: 800px) {
-  .menu {
-    display: inline-block;
+@media screen and (min-height: 800px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenava {
+    font-size: 18px;
   }
 }
