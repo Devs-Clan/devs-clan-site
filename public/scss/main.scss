@@ -1,5 +1,4 @@
 @import
-'./_screen_settings',
  './_body',
  './_navbar',
  './header',
@@ -11,4 +10,8 @@
  './_member',
  './_button',
 './_menu';
+
+::-webkit-scrollbar {
+    visibility: hidden;
+  }
  

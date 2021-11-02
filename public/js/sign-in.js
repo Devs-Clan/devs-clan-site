@@ -1,6 +1,6 @@
 firebase.initializeApp({
     apiKey: "AIzaSyBtUcu3gpNGV0ReN7fklRDOY7QwOtTGEAg",
-    authDomain: "devs-clan.firebaseapp.com",
+    authDomain: "devs-clan.web.app",
     databaseURL: "https://devs-clan-default-rtdb.firebaseio.com",
     projectId: "devs-clan",
     storageBucket: "devs-clan.appspot.com",
@@ -10,15 +10,15 @@ firebase.initializeApp({
 });
 
 let githubProvider = new firebase.auth.GithubAuthProvider()
-let googleProvider = new firebase.auth.GoogleAuthProvider()
 
-document.getElementById('login-google').addEventListener('click', ()=>signIn(googleProvider))
 document.getElementById('login-github').addEventListener('click', ()=>signIn(githubProvider))
 document.getElementById('logout').addEventListener('click', logout)
 
-
 function signIn(provider) {
-    firebase.auth().signInWithPopup(provider).then(res => {
+    firebase.auth().signInWithPopup(provider).then(result => {
+        const user = provider.user
+        setCookie("uesr", user.displayName, 30)
+        console.log(user.displayName)
     }).catch(error => {
         console.log("Code : ", error.code)
         console.log("Message :", error.message)
@@ -30,3 +30,10 @@ function logout() {
         console.log(error)
     })
 }
+
+function setCookie(cname,cvalue,exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }

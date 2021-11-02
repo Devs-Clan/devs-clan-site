@@ -1,17 +1,17 @@
 .row {
     display: flex;
-    justify-content: center;
-}
-
-.leftcolumn {   
-  position: static;
-  width: 50%;
+    justify-content: center;  
 }
 
 .rightcolumn {
   position: static;
   width: 20%;
   margin-left: 100px;
+}
+
+.leftcolumn {   
+  position: static;
+  width: 50%;
 }
 
 @media(max-width: 800px){
@@ -21,7 +21,6 @@
   .rightcolumn{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
     margin-left: 0;
   }
