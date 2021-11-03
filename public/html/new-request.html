@@ -13,14 +13,16 @@
         <div onclick="goBack()" class="btn" style="float: left;"><span>GO BACK</span></div>
         <a href="homepage.html"><div class="btn" style="float: left;"><span>HOME</span></div></a>
         <a href="requests.html"><div class="btn" style="float: left;"><span>REQUESTS</span></div></a>
-        <a href="sign-in.html"><div class="btn" style="float: left;"><span>SIGN IN</span></div></a>
+        <!-- <a href="sign-in.html"><div class="btn" style="float: left;"><span>SIGN IN</span></div></a> -->
     </div>
     <header><h1>New Request</h1></header>
     <div class="card">
-        <form action="/action_page.php" style="text-align: left;">
-            <label for="fname">Your GitHub user name </label><input type="text" name="user"><br>
-            <label for="lname">Request highlight </label><input type="text" name="highlight"><br>
-            <label for="lname">Request: </label><input type="text" name="request" style="width: 100%;"><br><br>
+        <form  action="http://192.168.1.38:5000/request" style="text-align: left;">
+            <h3>
+                Your GitHub user name<input type="text" name="user"><br>
+                Your request highlight  <input type="text" name="highlight"><br>
+                Request:<input type="text" name="request" style="width: 90%;">
+            </h3>
             <input type="submit" value="Submit">
           </form>
     </div>       
